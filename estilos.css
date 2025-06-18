@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+@font-face {
+src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/montserratalternates/MontserratAlternates-Regular.ttf);
+font-family: montserrat;
+font-weight: 400;
+}
+
+body {
+    font-family: montserrat; 
+    margin: 0;
+    background-color: white;
+    font-size: 18px;
+}
+
+header {
+    background-color: #FFF1D0;
+    color: #086788;
+    text-align: center;
+ }
+
+nav{
+    background-color: #FFF1D0; 
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    color: #06AED5;
+}
+
+div {
+    width: 30%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header,
+main,
+nav,
+footer {
+    padding: 10px;
+    width: 100%;
+
+}
+
+h1{
+font-family: "IBM Plex Serif", serif;
+background-color: #FFF1D0;
+color:#DD1C1A;
+text-align: center;
+font-size: 48px;
+animation: aparecer 4s steps(6)}
+
+
+h2 {
+    font-family: "IBM Plex Serif", serif;
+    color:#DD1C1A;
+    text-align: center;
+    font-size: 36px;
+}
+
+@keyframes aparecer {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+h3{
+    font-style: italic;
+}
+section, #portfolio div { width: 100%;}
+
+#portfolio div {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+align-items: center;
+margin: 20px;
+gap: 20px;
+}
+
+#portfolio div img {
+width: 100%;
+border-radius: 8px;
+box-shadow: 0 0 8px rgba(0,0,0,0.2); 
+transition: all 1s linear;
+}
+
+#portfolio div img:hover {
+transform: scale(1.05);
+box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    width: 400px;
+    background-color: #FFF1D0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.proyecto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#servicios{
+padding: 10px;
+}
+ul{
+    width: 500px;
+    margin: 10px;
+}
+
+footer{
+    background-color: #FFF1D0;
+    text-align: center;
+}
+
+
+@media (max-width: 768px){
+    header, main, footer, nav { padding: 2px;}
+    div { width: 70%; }
+    h1 { font-size: 8vw;}
+}
